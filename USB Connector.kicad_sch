@@ -3508,12 +3508,6 @@
 		(uuid "2249636f-3ff4-45ad-8ea6-af112eaf5e56")
 	)
 	(junction
-		(at 168.91 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a5904b7-c8af-4d70-be13-ac8e01574ed6")
-	)
-	(junction
 		(at 119.38 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3542,6 +3536,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9b244f8-dc0e-4e7b-945d-8c5ddd40c413")
+	)
+	(junction
+		(at 168.91 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb8517a2-03b3-4cab-bd25-5ced3ee57dc1")
+	)
+	(wire
+		(pts
+			(xy 168.91 91.44) (xy 168.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a438659-8fab-432d-86ff-b14fb5f44837")
 	)
 	(wire
 		(pts
@@ -3665,6 +3675,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 80.0621) (xy 189.23 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a37380-b9b4-4a2f-afb6-45c2ffd9e92b")
+	)
+	(wire
+		(pts
 			(xy 76.2 139.7) (xy 83.82 139.7)
 		)
 		(stroke
@@ -3765,6 +3785,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 80.01) (xy 168.91 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdbbb61f-aef3-48a9-b8c0-dba5cb6f0b7c")
+	)
+	(wire
+		(pts
 			(xy 214.63 129.54) (xy 201.93 129.54)
 		)
 		(stroke
@@ -3782,6 +3812,16 @@
 			(type default)
 		)
 		(uuid "d9e55981-8f5b-45eb-a366-2d0ee2e63457")
+	)
+	(wire
+		(pts
+			(xy 189.23 91.44) (xy 189.23 87.6821)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1cb9ff3-d5e9-40dd-af9a-388b1283dab7")
 	)
 	(wire
 		(pts
@@ -4173,7 +4213,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 189.23 78.74 0)
+		(at 189.23 95.25 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4185,29 +4225,29 @@
 		(fields_autoplaced yes)
 		(uuid "0aeef11c-91d5-4744-abff-7caf41b5f941")
 		(property "Reference" "C14"
-			(at 185.42 77.4699 0)
+			(at 193.04 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100pF"
-			(at 185.42 80.0099 0)
+		(property "Value" "470pF"
+			(at 193.04 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 188.2648 82.55 0)
+			(at 188.2648 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4218,7 +4258,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 78.74 0)
+			(at 189.23 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4229,7 +4269,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 189.23 78.74 0)
+			(at 189.23 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4336,7 +4376,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 168.91 78.74 0)
+		(at 168.91 95.25 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4348,29 +4388,29 @@
 		(fields_autoplaced yes)
 		(uuid "14af19c6-5107-4206-bef4-9a54e7b1f4e1")
 		(property "Reference" "C13"
-			(at 165.1 77.4699 0)
+			(at 172.72 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100pF"
-			(at 165.1 80.0099 0)
+		(property "Value" "1pF"
+			(at 172.72 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 167.9448 82.55 0)
+			(at 167.9448 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4381,7 +4421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 78.74 0)
+			(at 168.91 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4392,7 +4432,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 168.91 78.74 0)
+			(at 168.91 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4412,6 +4452,89 @@
 			(project "iot-measurement-endpoint"
 				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/5fe3fde0-c390-405a-8a72-d863563f6fd6"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 168.91 83.82 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e22db7f-01ca-4462-a863-c2b779757bc0")
+		(property "Reference" "R37"
+			(at 171.45 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0R"
+			(at 171.45 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 170.688 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 168.91 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bba6d4db-3c72-44d9-a317-5185d1216647")
+		)
+		(pin "1"
+			(uuid "63cb1424-689e-4dc5-8a26-c9e2239d295a")
+		)
+		(instances
+			(project "iot-measurement-endpoint"
+				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/5fe3fde0-c390-405a-8a72-d863563f6fd6"
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -5160,7 +5283,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 82.55 0)
+		(at 168.91 99.06 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5171,7 +5294,7 @@
 		(dnp no)
 		(uuid "5cb9dd3f-ab27-4adc-a8fc-a1d7634619df")
 		(property "Reference" "#PWR058"
-			(at 168.91 88.9 0)
+			(at 168.91 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5182,7 +5305,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.354 84.582 0)
+			(at 165.354 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5192,7 +5315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 82.55 0)
+			(at 168.91 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5203,7 +5326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 82.55 0)
+			(at 168.91 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5214,7 +5337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 82.55 0)
+			(at 168.91 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5837,7 +5960,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 82.55 0)
+		(at 189.23 99.06 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5848,7 +5971,7 @@
 		(dnp no)
 		(uuid "77c6aa34-37fb-4112-be9f-02f8f17f35f7")
 		(property "Reference" "#PWR057"
-			(at 189.23 88.9 0)
+			(at 189.23 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5859,7 +5982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.674 84.582 0)
+			(at 185.674 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5869,7 +5992,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 82.55 0)
+			(at 189.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5880,7 +6003,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 82.55 0)
+			(at 189.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5891,7 +6014,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 82.55 0)
+			(at 189.23 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6380,6 +6503,89 @@
 			(project "iot-measurement-endpoint"
 				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/5fe3fde0-c390-405a-8a72-d863563f6fd6"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 189.23 83.8721 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2da7eca-3f78-4963-b4ee-070e7cde9475")
+		(property "Reference" "R36"
+			(at 191.77 82.602 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "500R"
+			(at 191.77 85.142 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 191.008 83.8721 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 83.8721 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 189.23 83.8721 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b028e0c8-0131-45bb-883b-694fd25b3423")
+		)
+		(pin "1"
+			(uuid "a33adb0f-b530-429c-b58b-73e1c69465de")
+		)
+		(instances
+			(project "iot-measurement-endpoint"
+				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/5fe3fde0-c390-405a-8a72-d863563f6fd6"
+					(reference "R36")
 					(unit 1)
 				)
 			)
