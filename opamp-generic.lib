@@ -1,0 +1,93 @@
+*=========================================================
+* simple ideal op-amp
+*=========================================================
+.subckt opamp_simple inp inn out vcc vee
+
+.param rin=1Meg
+.param rout=100
+.param avol=100k
+
+* Differential input resistance
+RIN inp inn {rin}
+
+* Open-loop gain stage with rail limiting
+EGAIN gain vee VALUE={max(min(avol*(V(inp)-V(inn)),V(vcc)),V(vee))}
+
+* Output resistance
+ROUT gain out {rout}
+
+* Weak DC paths for convergence
+Rinp_ref   inp  vee 1G
+Rinn_ref   inn  vee 1G
+Rout_ref   out  vee 1G
+Rgain_ref  gain vee 1G
+Rvcc_ref   vcc  vee 1G
+
+.ends opamp_simple
+
+*=========================================================
+* dual op-amp package
+* pins:
+*  inp0 inn0 out0
+*  inp1 inn1 out1
+*  vcc vee
+*=========================================================
+.subckt opamp_dual inp0 inn0 out0 inp1 inn1 out1 vcc vee
+.param rin=1meg
+.param avol=100k
+.param rout=100
+
+rin0 inp0 inn0 {rin}
+bgain0 nint0 0 V = max(min({avol}*(V(inp0)-V(inn0)), V(vcc)), V(vee))
+rout0 nint0 out0 {rout}
+rshunt0 out0 0 1G
+
+rin1 inp1 inn1 {rin}
+bgain1 nint1 0 V = max(min({avol}*(V(inp1)-V(inn1)), V(vcc)), V(vee))
+rout1 nint1 out1 {rout}
+rshunt1 out1 0 1G
+
+.ends opamp_dual
+
+
+*=========================================================
+* quad op-amp package
+* pins:
+*  inp0 inn0 out0
+*  inp1 inn1 out1
+*  inp2 inn2 out2
+*  inp3 inn3 out3
+*  vcc vee
+*=========================================================
+.subckt opamp_quad
++ inp0 inn0 out0
++ inp1 inn1 out1
++ inp2 inn2 out2
++ inp3 inn3 out3
++ vcc vee
+
+.param rin=1meg
+.param avol=100k
+.param rout=100
+
+rin0 inp0 inn0 {rin}
+bgain0 nint0 0 V = max(min({avol}*(V(inp0)-V(inn0)), V(vcc)), V(vee))
+rout0 nint0 out0 {rout}
+rshunt0 out0 0 1G
+
+rin1 inp1 inn1 {rin}
+bgain1 nint1 0 V = max(min({avol}*(V(inp1)-V(inn1)), V(vcc)), V(vee))
+rout1 nint1 out1 {rout}
+rshunt1 out1 0 1G
+
+rin2 inp2 inn2 {rin}
+bgain2 nint2 0 V = max(min({avol}*(V(inp2)-V(inn2)), V(vcc)), V(vee))
+rout2 nint2 out2 {rout}
+rshunt2 out2 0 1G
+
+rin3 inp3 inn3 {rin}
+bgain3 nint3 0 V = max(min({avol}*(V(inp3)-V(inn3)), V(vcc)), V(vee))
+rout3 nint3 out3 {rout}
+rshunt3 out3 0 1G
+
+.ends opamp_quad

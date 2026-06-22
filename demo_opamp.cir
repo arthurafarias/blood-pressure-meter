@@ -1,0 +1,27 @@
+.title KiCad schematic
+.include "/home/arthur/Projects/Electronics/Projects/blood-pressure-monitor/blood-pressure-meter/opamp-generic.lib"
+.save all
+.probe alli
+.probe p(R1)
+.probe p(R10)
+.probe p(R9)
+.probe p(C1)
+.probe p(R8)
+.probe p(R11)
+.probe p(V1)
+.probe p(V2)
+.probe p(XU3)
+.tran 1u 10m 0 1u uic
+R1 /PWM Net-_U3A--_ 100k
+R10 Net-_U3A--_ /PHASE 100k
+R9 GND Net-_U3A-+_ 100k
+C1 Net-_U3A--_ GND 2n
+R8 Net-_U3A-+_ /PWM 100k
+R11 GND /PHASE 100k
+V1 /PWM GND PULSE( 0 5 2n 2n 2n 500u 1ms ) 
+V2 +5V GND DC 5 
+XU3 Net-_U3A-+_ Net-_U3A--_ /PHASE +5V GND opamp_simple
+
+.plot tran V(/PHASE) V(Net-_U3A--_) V(Net-_U3A-+_)
+
+.end
