@@ -2289,6 +2289,152 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "26eb3f14-1a20-4992-a8ae-90d88d71e9cf")
+		(at 114.925 134.835 -90)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C21"
+			(at 0 -1.16 90)
+			(layer "F.SilkS")
+			(uuid "3d3df817-dcf2-4d73-8d70-018aa1ced1ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "47nF"
+			(at 0 1.16 90)
+			(layer "F.Fab")
+			(uuid "b2a9be34-ec09-4252-8baa-e733793bee8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a54524dd-965d-451c-8767-18cf71b099d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc1ab942-cf38-4af3-83a7-86cc538c304c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/5fe3fde0-c390-405a-8a72-d863563f6fd6/396d09b7-3815-4a55-8548-e73a180cf235")
+		(sheetname "/USB Connector/")
+		(sheetfile "USB Connector.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "175c6808-f415-4de8-b097-817b9fdc880f")
+		)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5638608b-eeac-46b2-82cb-d3ab5e950efe")
+		)
+		(fp_rect
+			(start -0.91 -0.46)
+			(end 0.91 0.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "8b703e0a-37b2-46d0-8427-76d0d2b2f8ce")
+		)
+		(fp_rect
+			(start -0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "60f73ccc-17fd-49c5-b3ce-86e8586c087a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "b0be0128-6bcb-4528-b352-cc69b163d6b3")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 270)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Earth")
+			(pintype "passive")
+			(uuid "da02429e-4946-4a22-a5de-568114703785")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 270)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "5fbfe877-bfe2-4b1d-bda2-eddb64be86c1")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "290d914a-9214-4028-a89c-74be525f683d")
@@ -9843,6 +9989,152 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "96153aa6-a4bc-4421-8b7e-4caf9a2a7e78")
+		(at 116.905 134.855 -90)
+		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R38"
+			(at 0 -1.17 90)
+			(layer "F.SilkS")
+			(uuid "dc2e73d8-213a-4afb-abf3-c79165282f88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 0 1.17 90)
+			(layer "F.Fab")
+			(uuid "d292b916-2183-4bab-88fb-28698f64df27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be0e494c-8167-4c06-9baf-f3ba7b1e7bf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9eb2d199-620c-4858-963f-026ad1f4f9bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/5fe3fde0-c390-405a-8a72-d863563f6fd6/9eab10b1-e401-462a-8572-db9d548c7737")
+		(sheetname "/USB Connector/")
+		(sheetfile "USB Connector.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.153641 0.38)
+			(end 0.153641 0.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ad7a63e7-698a-436a-88cc-bf80761c59c9")
+		)
+		(fp_line
+			(start -0.153641 -0.38)
+			(end 0.153641 -0.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1ebb0538-3dc4-4ff0-9257-bbcb7ddec0ae")
+		)
+		(fp_rect
+			(start -0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "06cc9b42-cec1-481f-832f-e66ed1c9574f")
+		)
+		(fp_rect
+			(start -0.525 -0.27)
+			(end 0.525 0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "53189654-9329-4e10-b162-c621de538872")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "8fb96929-6cf7-415b-891e-ef3d3f4bdf33")
+			(effects
+				(font
+					(size 0.26 0.26)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.51 0 270)
+			(size 0.54 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Earth")
+			(pintype "passive")
+			(uuid "e9b1cdab-5e92-491a-ad62-f5454ab07a2d")
+		)
+		(pad "2" smd roundrect
+			(at 0.51 0 270)
+			(size 0.54 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "2de0bc2c-383a-4ae0-a06f-c8a82c67bf02")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -19485,6 +19777,14 @@
 		(uuid "3b507509-428d-4a08-8fff-22c81cbc9303")
 	)
 	(via
+		(at 114.925 135.315)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "GND")
+		(uuid "3d27cc78-8a4f-47c9-9dd6-efac9746290a")
+	)
+	(via
 		(at 93 137.5)
 		(size 0.6)
 		(drill 0.3)
@@ -19787,6 +20087,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net "GND")
 		(uuid "ed49154c-adf1-427e-a9a5-09918ba90a0c")
+	)
+	(via
+		(at 116.905 135.365)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "GND")
+		(uuid "eefb2c40-f6b0-4d64-b8a4-9fc3e243a3ce")
 	)
 	(via
 		(at 103.7 131.3)
@@ -22556,6 +22864,38 @@
 		(layer "In2.Cu")
 		(net "TXD")
 		(uuid "afabb03f-fbb9-4563-a563-ad5cb71c4902")
+	)
+	(segment
+		(start 117.385 132.29)
+		(end 117.385 133.865)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Earth")
+		(uuid "74f6b34d-9072-4c42-9e60-fca411cb456f")
+	)
+	(segment
+		(start 116.905 134.345)
+		(end 114.935 134.345)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Earth")
+		(uuid "b83532a4-96a9-46a0-8572-8cd5b11f6275")
+	)
+	(segment
+		(start 117.385 133.865)
+		(end 116.905 134.345)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Earth")
+		(uuid "f1dcb040-7383-4dd8-84c4-c820af96b896")
+	)
+	(segment
+		(start 114.935 134.345)
+		(end 114.925 134.355)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Earth")
+		(uuid "feccd0b0-f5d4-464b-9f22-11740d0ecea0")
 	)
 	(segment
 		(start 101.165 125.125)
