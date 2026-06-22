@@ -283,20 +283,21 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "Device:NetTie_2"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -305,8 +306,8 @@
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -316,7 +317,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -337,7 +338,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Net tie, 2 pins"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -348,7 +349,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "net tie short"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -359,7 +360,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "Net*Tie*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -370,10 +371,11 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -383,11 +385,11 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "NetTie_2_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -403,9 +405,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -867,7 +869,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 86.36) (xy 163.83 86.36)
+			(xy 160.02 86.36) (xy 165.1 86.36)
 		)
 		(stroke
 			(width 0)
@@ -887,13 +889,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 86.36) (xy 176.53 86.36)
+			(xy 170.18 86.36) (xy 176.53 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fdcc463-418c-4137-a8d9-1622bbb2a116")
+		(uuid "a0e5358f-5b2e-4c0c-abdb-577cdce7b0a9")
 	)
 	(wire
 		(pts
@@ -904,6 +906,86 @@
 			(type default)
 		)
 		(uuid "daacdf55-2ea0-425b-8911-140f13d3537f")
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 167.64 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08925250-8cfb-4397-bc12-a36dd2fc0867")
+		(property "Reference" "NT1"
+			(at 167.64 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 167.64 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 167.64 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 167.64 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e50b1752-2d7e-4684-9cbe-d3d18f7ed266")
+		)
+		(pin "1"
+			(uuid "0d2e8d7d-8b02-4f56-be5d-da46eb59f914")
+		)
+		(instances
+			(project "iot-measurement-endpoint"
+				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/81efdadf-8099-4b8f-9910-9943003e83e3"
+					(reference "NT1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -1380,86 +1462,6 @@
 			(project "iot-measurement-endpoint"
 				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/81efdadf-8099-4b8f-9910-9943003e83e3"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 86.36 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b50da09-f6f6-44b9-ac8a-c567bd41b148")
-		(property "Reference" "R14"
-			(at 167.64 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 167.64 82.55 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 167.64 88.138 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "44a78e4c-94fc-4f1d-809a-e7dc66eb91da")
-		)
-		(pin "1"
-			(uuid "f7568def-e60e-4c31-b748-1bee2904997a")
-		)
-		(instances
-			(project "iot-measurement-endpoint"
-				(path "/33c00b80-cfc4-4f65-9ec2-e184ca590513/81efdadf-8099-4b8f-9910-9943003e83e3"
-					(reference "R14")
 					(unit 1)
 				)
 			)
